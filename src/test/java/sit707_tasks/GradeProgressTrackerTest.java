@@ -75,7 +75,7 @@ public class GradeProgressTrackerTest {
         Task task = tasks.get(0);
         assertNotNull(task);
         // The task completion status should still be false
-        assertTrue("Task completion status should not be set without completing it", task.isCompleted());
+        assertFalse("Task completion status should not be set without completing it", task.isCompleted());
     }
     
 //    @Test
